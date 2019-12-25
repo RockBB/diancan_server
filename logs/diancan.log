@@ -1,0 +1,1515 @@
+INFO 2019-12-24 15:51:25,090 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-12-24 15:51:25,108 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-12-24 15:51:25,180 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-12-24 15:51:25,180 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-12-24 15:51:25,183 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-12-24 16:05:58,072 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2019-12-24 16:05:58,093 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-12-24 16:05:58,173 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-12-24 16:05:58,212 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-12-24 16:05:58,212 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+ERROR 2019-12-24 17:59:17,398 exception 77 Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-24 17:59:17,430 log 228 Bad Request: /
+WARNING 2019-12-24 17:59:17,431 basehttp 154 "POST / HTTP/1.1" 400 69433
+ERROR 2019-12-24 17:59:34,962 exception 77 Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-24 17:59:34,995 log 228 Bad Request: /banner
+WARNING 2019-12-24 17:59:34,996 basehttp 154 "POST /banner HTTP/1.1" 400 69499
+ERROR 2019-12-24 18:02:50,140 exception 77 Invalid HTTP_HOST header: '127.0.0.1:9000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-24 18:02:50,175 log 228 Bad Request: /banner
+WARNING 2019-12-24 18:02:50,175 basehttp 154 "POST /banner HTTP/1.1" 400 69629
+ERROR 2019-12-24 18:03:36,798 log 228 Internal Server Error: /banner
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\middleware\common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\middleware\common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:9000/banner/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2019-12-24 18:03:36,800 basehttp 154 "POST /banner HTTP/1.1" 500 70356
+WARNING 2019-12-24 18:04:12,487 log 228 Method Not Allowed: /banner/
+WARNING 2019-12-24 18:04:12,487 basehttp 154 "POST /banner/ HTTP/1.1" 405 46
+INFO 2019-12-24 18:04:30,430 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-12-24 18:04:58,587 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-12-24 18:07:34,638 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-24 18:07:34,737 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-24 18:07:34,816 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 18:07:34,817 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 18:07:34,842 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-24 18:07:34,844 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 18:07:34,849 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 18:07:34,857 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 18:07:34,867 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 18:07:34,875 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 18:07:34,882 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 18:07:34,889 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 18:07:34,899 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 18:07:34,908 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 18:07:34,910 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 18:07:34,913 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 18:07:34,915 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 18:07:34,930 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 18:07:34,948 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 18:07:35,035 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 18:07:43,128 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-24 18:07:44,493 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 14791
+INFO 2019-12-24 18:07:44,561 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-24 18:07:44,562 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-24 18:07:44,567 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:07:44,569 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 18:07:48,230 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 24745
+INFO 2019-12-24 18:07:48,290 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 18:07:48,296 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 18:07:48,298 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:07:48,299 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 18:07:48,302 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 18:07:48,306 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 18:07:48,315 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 18:07:49,295 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 24556
+INFO 2019-12-24 18:07:49,386 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:07:50,920 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 24745
+INFO 2019-12-24 18:07:50,978 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:07:56,889 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 30593
+INFO 2019-12-24 18:07:56,960 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-24 18:07:56,961 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 18:07:56,964 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 18:07:56,967 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 18:07:56,975 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-24 18:07:56,976 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-24 18:07:56,988 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 18:07:56,991 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:07:57,004 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 18:07:57,020 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 18:07:57,025 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 18:07:58,870 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 23997
+INFO 2019-12-24 18:07:58,945 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:08:00,778 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 24745
+INFO 2019-12-24 18:08:00,836 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:08:06,103 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20096
+INFO 2019-12-24 18:08:06,153 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 18:08:06,158 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-24 18:08:06,166 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-24 18:08:06,171 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-24 18:08:11,546 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 24745
+WARNING 2019-12-24 21:45:36,492 log 228 Not Found: /
+WARNING 2019-12-24 21:45:36,492 basehttp 154 "GET / HTTP/1.1" 404 2728
+INFO 2019-12-24 21:45:50,045 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-24 21:45:50,148 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-24 21:45:50,239 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 21:45:50,244 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 21:45:50,250 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 21:45:50,265 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 21:45:50,265 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 21:45:50,270 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 21:45:50,272 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-24 21:45:50,290 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 21:45:50,295 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 21:45:50,303 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 21:45:50,312 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 21:45:50,317 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 21:45:50,322 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 21:45:50,323 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 21:45:50,334 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 21:45:50,343 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 21:45:50,353 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 21:45:50,519 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+WARNING 2019-12-24 21:45:53,527 log 228 Not Found: /favicon.ico
+WARNING 2019-12-24 21:45:53,527 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2779
+INFO 2019-12-24 21:45:58,176 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-24 21:46:01,983 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 14791
+INFO 2019-12-24 21:46:02,036 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-24 21:46:02,049 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 21:46:02,050 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 21:46:02,051 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-24 21:59:07,564 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 24745
+INFO 2019-12-24 21:59:07,629 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 21:59:07,648 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 21:59:07,654 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 21:59:07,656 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 21:59:07,658 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 21:59:07,664 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 21:59:07,667 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 21:59:14,902 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20096
+INFO 2019-12-24 21:59:14,960 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-24 21:59:14,966 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 21:59:14,976 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-24 21:59:14,977 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-24 21:59:55,928 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 21:59:56,018 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20437
+INFO 2019-12-24 21:59:56,073 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:00:31,581 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 22:00:31,670 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20437
+INFO 2019-12-24 22:00:31,723 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:00:56,221 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 22:00:56,312 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 20437
+INFO 2019-12-24 22:00:56,367 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:01:16,762 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 22:01:16,857 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 30510
+INFO 2019-12-24 22:01:16,925 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:01:16,930 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 22:22:58,275 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:23:20,126 basehttp 154 "GET /banner/ HTTP/1.1" 200 6392
+INFO 2019-12-24 22:23:20,171 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-12-24 22:23:20,172 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-12-24 22:23:20,178 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-12-24 22:23:20,180 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-12-24 22:23:20,193 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-12-24 22:23:20,196 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-12-24 22:23:20,201 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-12-24 22:23:20,212 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-12-24 22:23:20,225 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO 2019-12-24 22:23:20,263 basehttp 154 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2019-12-24 22:23:20,295 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2019-12-24 22:23:33,591 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-24 22:24:50,823 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:27:19,043 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:27:19,209 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:27:19,214 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-24 22:27:19,217 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-24 22:27:19,218 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-24 22:30:59,895 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 24556
+INFO 2019-12-24 22:30:59,958 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:31:02,395 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 18806
+INFO 2019-12-24 22:31:02,461 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 22:31:02,461 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:31:02,462 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 22:31:02,462 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 22:31:02,478 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 22:31:02,479 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 22:31:02,504 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 22:31:02,507 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 22:31:21,183 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 22972
+ERROR 2019-12-24 22:31:21,192 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 500 59
+INFO 2019-12-24 22:31:48,375 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 22:31:48,459 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17557
+INFO 2019-12-24 22:31:48,512 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:32:47,079 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 22:32:47,155 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 27587
+INFO 2019-12-24 22:32:47,220 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 22:47:07,638 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:47:16,671 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:47:20,004 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:49:12,368 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:49:12,413 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+WARNING 2019-12-24 22:50:01,622 log 228 Method Not Allowed: /nav/
+WARNING 2019-12-24 22:50:01,622 basehttp 154 "POST /nav/ HTTP/1.1" 405 46
+INFO 2019-12-24 22:50:07,549 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:50:23,494 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:50:23,494 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:50:23,585 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:50:23,586 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:50:23,590 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:50:23,590 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:51:43,246 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:52:28,287 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:55:21,893 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:55:21,894 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:56:13,818 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:56:13,821 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:56:13,999 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:56:14,005 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:56:14,009 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:56:14,009 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 22:57:22,930 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:57:22,933 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:59:17,786 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:59:17,787 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 22:59:19,603 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 22:59:19,607 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 23:01:43,225 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 23:01:43,225 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 23:01:46,508 basehttp 154 "GET /nav/ HTTP/1.1" 200 87
+INFO 2019-12-24 23:01:46,508 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-24 23:40:59,499 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 4367
+INFO 2019-12-24 23:40:59,580 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+ERROR 2019-12-24 23:41:15,618 log 228 Internal Server Error: /xadmin/home/navinfo/
+Traceback (most recent call last):
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\views\website.py", line 71, in post
+    return self.get(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\views\website.py", line 67, in get
+    return login.as_view(**defaults)(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\contrib\auth\views.py", line 61, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\edit.py", line 141, in post
+    if form.is_valid():
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\forms\forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\forms\forms.py", line 180, in errors
+    self.full_clean()
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\forms\forms.py", line 382, in full_clean
+    self._clean_form()
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\forms\forms.py", line 409, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\xadmin\forms.py", line 30, in clean
+    username=username, password=password)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\14612\Desktop\diancan\diancan_server\diancan_server\apps\users\utils.py", line 58, in authenticate
+    mobile = user.mobile
+AttributeError: 'NoneType' object has no attribute 'mobile'
+ERROR 2019-12-24 23:41:15,624 basehttp 154 "POST /xadmin/home/navinfo/ HTTP/1.1" 500 184312
+INFO 2019-12-24 23:44:23,946 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-24 23:44:24,031 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-24 23:44:29,168 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+WARNING 2019-12-24 23:44:36,613 log 228 Forbidden (CSRF token missing or incorrect.): /xadmin/
+WARNING 2019-12-24 23:44:36,614 basehttp 154 "POST /xadmin/ HTTP/1.1" 403 2508
+INFO 2019-12-24 23:44:54,967 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13929
+ERROR 2019-12-24 23:44:54,968 basehttp 154 "GET /xadmin/ HTTP/1.1" 500 59
+WARNING 2019-12-24 23:45:21,800 log 228 Forbidden (CSRF token missing or incorrect.): /xadmin/
+WARNING 2019-12-24 23:45:21,801 basehttp 154 "POST /xadmin/ HTTP/1.1" 403 2508
+INFO 2019-12-24 23:45:24,376 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13929
+INFO 2019-12-24 23:45:24,439 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:45:28,310 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 28570
+INFO 2019-12-24 23:45:28,381 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-24 23:45:28,408 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-24 23:45:28,413 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-24 23:45:28,416 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:45:31,733 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 33623
+INFO 2019-12-24 23:45:31,784 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:45:36,690 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 23883
+INFO 2019-12-24 23:45:36,746 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:45:41,758 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:45:41,815 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:48:28,955 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:48:29,005 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:48:31,856 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 23883
+INFO 2019-12-24 23:48:32,742 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 33623
+INFO 2019-12-24 23:48:33,540 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 28570
+INFO 2019-12-24 23:48:34,323 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13929
+INFO 2019-12-24 23:48:36,871 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 23694
+INFO 2019-12-24 23:48:38,121 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:48:39,477 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:48:51,247 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 23694
+INFO 2019-12-24 23:48:53,326 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:48:56,300 basehttp 154 "POST /xadmin/home/navinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 23:48:56,371 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 27715
+INFO 2019-12-24 23:48:56,430 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:48:59,871 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:49:03,296 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 27425
+INFO 2019-12-24 23:49:08,587 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:49:12,798 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 23883
+INFO 2019-12-24 23:49:12,850 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:49:15,260 basehttp 154 "GET /xadmin/home/navinfo/add/ HTTP/1.1" 200 17944
+INFO 2019-12-24 23:49:15,993 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 27425
+INFO 2019-12-24 23:49:16,762 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 23883
+INFO 2019-12-24 23:49:17,923 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:29,298 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 23:49:29,371 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 27896
+INFO 2019-12-24 23:49:29,429 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:49:31,522 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:32,395 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:34,229 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 23:49:34,301 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 28480
+INFO 2019-12-24 23:49:34,346 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:49:36,046 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:37,048 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:38,675 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 23:49:38,749 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 29064
+INFO 2019-12-24 23:49:38,801 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:49:41,528 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:42,578 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 19234
+INFO 2019-12-24 23:49:44,036 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-24 23:49:44,110 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 29648
+INFO 2019-12-24 23:49:44,159 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-24 23:49:50,331 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-24 23:49:50,338 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-24 23:49:50,368 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 200 255262
+INFO 2019-12-24 23:49:50,369 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 200 334554
+INFO 2019-12-24 23:49:50,380 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 200 41737
+INFO 2019-12-24 23:49:50,382 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 200 318608
+INFO 2019-12-24 23:49:52,727 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-24 23:49:52,730 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-24 23:49:52,911 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:52,912 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:52,912 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:52,913 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:56,701 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-24 23:49:56,701 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-24 23:49:56,910 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:56,919 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:56,919 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:49:56,920 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-24 23:50:01,091 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-24 23:50:01,094 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+WARNING 2019-12-24 23:51:46,326 log 228 Not Found: /user/authorizations/
+WARNING 2019-12-24 23:51:46,326 basehttp 154 "POST /user/authorizations/ HTTP/1.1" 404 2807
+WARNING 2019-12-24 23:52:45,560 log 228 Not Found: /user/login/
+WARNING 2019-12-24 23:52:45,561 basehttp 154 "POST /user/login/ HTTP/1.1" 404 2780
+WARNING 2019-12-24 23:54:18,402 log 228 Not Found: /user/login/
+WARNING 2019-12-24 23:54:18,403 basehttp 154 "POST /user/login/ HTTP/1.1" 404 2886
+ERROR 2019-12-24 23:54:51,874 log 228 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\14612\Desktop\diancan\diancan_server\diancan_server\apps\users\utils.py", line 58, in authenticate
+    mobile = user.mobile
+AttributeError: 'NoneType' object has no attribute 'mobile'
+ERROR 2019-12-24 23:54:51,878 basehttp 154 "POST /users/login/ HTTP/1.1" 500 21380
+ERROR 2019-12-24 23:55:13,750 log 228 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\14612\Desktop\diancan\diancan_server\diancan_server\apps\users\utils.py", line 58, in authenticate
+    mobile = user.mobile
+AttributeError: 'NoneType' object has no attribute 'mobile'
+ERROR 2019-12-24 23:55:13,751 basehttp 154 "POST /users/login/ HTTP/1.1" 500 21380
+ERROR 2019-12-24 23:55:26,741 log 228 Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\views.py", line 57, in post
+    if serializer.is_valid():
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework_jwt\serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\14612\Desktop\diancan\diancan_server\diancan_server\apps\users\utils.py", line 58, in authenticate
+    mobile = user.mobile
+AttributeError: 'NoneType' object has no attribute 'mobile'
+ERROR 2019-12-24 23:55:26,743 basehttp 154 "POST /users/login/ HTTP/1.1" 500 21380
+WARNING 2019-12-25 00:03:20,666 log 228 Bad Request: /users/login/
+WARNING 2019-12-25 00:03:20,666 basehttp 154 "POST /users/login/ HTTP/1.1" 400 67
+INFO 2019-12-25 00:03:35,321 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 00:08:43,311 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:08:43,312 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:09:13,199 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:09:37,302 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:28:33,516 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:29:17,782 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:29:33,074 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:29:33,089 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:29:33,116 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:29:33,120 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:29:33,125 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:29:33,129 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:29:34,612 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:30:56,790 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:31:53,060 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:31:55,882 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:32:06,576 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:33:17,521 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:38:36,807 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:39:18,381 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:39:23,819 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:39:32,768 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:41:00,524 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:41:00,850 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:41:00,858 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:41:00,885 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:41:00,885 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:41:00,893 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:41:00,895 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:41:02,515 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:41:02,520 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:41:03,237 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:41:17,605 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:41:36,323 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:41:36,330 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:41:39,030 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:41:39,031 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:45:47,257 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 00:47:18,817 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING 2019-12-25 00:47:18,825 log 228 Bad Request: /users/login/
+WARNING 2019-12-25 00:47:18,826 basehttp 154 "POST /users/login/ HTTP/1.1" 400 81
+INFO 2019-12-25 00:47:34,070 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 00:47:34,148 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:47:34,151 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:47:34,178 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:47:34,179 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:47:34,183 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:47:34,183 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:53:13,703 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:53:16,379 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:53:25,177 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 00:53:25,244 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:53:25,252 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 00:53:25,283 basehttp 154 "GET /media/banner/cp4_ZrdHJZp.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:53:25,284 basehttp 154 "GET /media/banner/cp3_S2aLXIh.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:53:25,287 basehttp 154 "GET /media/banner/cp2_VUtaVYT.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:53:25,288 basehttp 154 "GET /media/banner/cp1_sGnG1gG.jpg HTTP/1.1" 304 0
+INFO 2019-12-25 00:53:56,361 basehttp 154 "GET /users/captcha/ HTTP/1.1" 200 140
+INFO 2019-12-25 00:56:28,680 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 00:56:28,737 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 00:56:28,753 basehttp 154 "GET /banner/ HTTP/1.1" 200 376
+INFO 2019-12-25 09:12:46,385 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+WARNING 2019-12-25 09:21:12,169 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 09:21:12,170 basehttp 154 "POST /users/register/ HTTP/1.1" 400 80
+WARNING 2019-12-25 09:22:54,730 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 09:22:54,730 basehttp 154 "POST /users/register/ HTTP/1.1" 400 60
+INFO 2019-12-25 09:23:23,606 basehttp 154 "POST /users/register/ HTTP/1.1" 201 213
+INFO 2019-12-25 09:24:17,062 basehttp 154 "POST /users/login/ HTTP/1.1" 200 213
+WARNING 2019-12-25 11:37:22,607 log 228 Not Found: /
+WARNING 2019-12-25 11:37:22,607 basehttp 154 "GET / HTTP/1.1" 404 2940
+WARNING 2019-12-25 11:37:22,780 log 228 Not Found: /favicon.ico
+WARNING 2019-12-25 11:37:22,780 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2991
+INFO 2019-12-25 11:37:33,841 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-25 11:37:33,953 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-25 11:37:34,002 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,002 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,016 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,032 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,041 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-25 11:37:34,046 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,053 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-25 11:37:34,066 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-25 11:37:34,070 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-25 11:37:34,077 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:34,088 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-25 11:37:34,101 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-25 11:37:34,103 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-25 11:37:34,104 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-25 11:37:34,109 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-25 11:37:34,109 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-25 11:37:34,126 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-25 11:37:34,193 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-25 11:37:43,392 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-25 11:37:44,781 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 17102
+INFO 2019-12-25 11:37:44,823 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-25 11:37:44,837 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:44,844 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:37:44,849 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-25 11:37:55,883 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 31743
+INFO 2019-12-25 11:37:55,946 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-25 11:37:55,950 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:55,964 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-25 11:37:55,965 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-25 11:37:55,969 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-25 11:37:55,989 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-25 11:37:55,989 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-25 11:37:55,991 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 694
+INFO 2019-12-25 11:37:55,993 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-25 11:37:55,996 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:56,007 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-25 11:37:56,017 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:56,020 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:56,020 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-12-25 11:37:56,021 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-25 11:37:56,029 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-25 11:37:56,035 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:02,800 basehttp 154 "GET /xadmin/reversion/revision/add/ HTTP/1.1" 200 30383
+INFO 2019-12-25 11:38:02,868 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:02,876 basehttp 154 "GET /static/xadmin/css/xadmin.plugin.formset.css HTTP/1.1" 200 1114
+INFO 2019-12-25 11:38:02,877 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-12-25 11:38:02,881 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-12-25 11:38:02,884 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-12-25 11:38:02,886 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.formset.js HTTP/1.1" 200 5969
+INFO 2019-12-25 11:38:15,875 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 36796
+INFO 2019-12-25 11:38:15,948 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:15,948 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-25 11:38:23,666 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 26624
+INFO 2019-12-25 11:38:23,724 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:28,192 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 27237
+INFO 2019-12-25 11:38:28,247 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:30,708 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 26624
+INFO 2019-12-25 11:38:30,764 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:40,005 basehttp 154 "GET /xadmin/foods/foodcategory/add/ HTTP/1.1" 200 19764
+INFO 2019-12-25 11:38:40,053 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:44,984 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 27237
+INFO 2019-12-25 11:38:45,053 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:46,600 basehttp 154 "GET /xadmin/foods/food/add/ HTTP/1.1" 200 25261
+INFO 2019-12-25 11:38:46,669 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:38:46,680 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-25 11:38:46,681 basehttp 154 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2216
+INFO 2019-12-25 11:38:46,687 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-25 11:38:46,698 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-25 11:38:47,234 basehttp 154 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 701922
+INFO 2019-12-25 11:38:47,330 basehttp 154 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 200 338
+INFO 2019-12-25 11:38:47,361 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 200 47805
+INFO 2019-12-25 11:38:47,387 basehttp 154 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 200 18573
+INFO 2019-12-25 11:38:47,409 basehttp 154 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 200 5579
+INFO 2019-12-25 11:38:47,428 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2019-12-25 11:38:47,428 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 200 419
+INFO 2019-12-25 11:38:47,429 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 200 1306
+INFO 2019-12-25 11:38:47,434 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 200 381
+INFO 2019-12-25 11:38:47,439 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2019-12-25 11:38:47,480 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 200 12421
+INFO 2019-12-25 11:38:47,527 basehttp 154 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 200 3094
+INFO 2019-12-25 11:39:21,408 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 26624
+INFO 2019-12-25 11:39:21,470 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:39:23,929 basehttp 154 "GET /xadmin/foods/foodcategory/add/ HTTP/1.1" 200 19764
+INFO 2019-12-25 11:39:23,969 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:39:59,479 basehttp 154 "POST /xadmin/foods/foodcategory/add/ HTTP/1.1" 302 0
+INFO 2019-12-25 11:39:59,598 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 29403
+INFO 2019-12-25 11:39:59,662 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:40:04,798 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 36796
+INFO 2019-12-25 11:40:04,851 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:40:08,888 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 27237
+INFO 2019-12-25 11:40:08,943 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:40:11,001 basehttp 154 "GET /xadmin/foods/food/add/ HTTP/1.1" 200 25298
+INFO 2019-12-25 11:40:11,068 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 11:43:32,278 basehttp 154 "POST /xadmin/foods/food/add/ HTTP/1.1" 302 0
+INFO 2019-12-25 11:43:32,392 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 29309
+INFO 2019-12-25 11:43:32,484 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+WARNING 2019-12-25 11:45:46,427 log 228 Method Not Allowed: /foods/list/
+WARNING 2019-12-25 11:45:46,428 basehttp 154 "POST /foods/list/ HTTP/1.1" 405 46
+INFO 2019-12-25 11:45:51,361 basehttp 154 "GET /foods/list/ HTTP/1.1" 200 373
+INFO 2019-12-25 11:46:41,950 basehttp 154 "GET /media/food/tuDuShaoji.jpg HTTP/1.1" 200 72100
+WARNING 2019-12-25 15:40:36,443 log 228 Not Found: /cart/foods/
+WARNING 2019-12-25 15:40:36,443 basehttp 154 "GET /cart/foods/ HTTP/1.1" 404 3097
+WARNING 2019-12-25 15:41:21,122 log 228 Not Found: /cart/foods/
+WARNING 2019-12-25 15:41:21,122 basehttp 154 "GET /cart/foods/ HTTP/1.1" 404 3097
+WARNING 2019-12-25 15:42:23,082 log 228 Not Found: /
+WARNING 2019-12-25 15:42:23,083 basehttp 154 "GET / HTTP/1.1" 404 3046
+WARNING 2019-12-25 15:42:43,800 log 228 Unauthorized: /carts/foods/
+WARNING 2019-12-25 15:42:43,801 basehttp 154 "GET /carts/foods/ HTTP/1.1" 401 43
+INFO 2019-12-25 15:43:13,628 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 2
+WARNING 2019-12-25 15:43:32,285 log 228 Bad Request: /carts/foods/
+WARNING 2019-12-25 15:43:32,285 basehttp 154 "POST /carts/foods/ HTTP/1.1" 400 36
+INFO 2019-12-25 15:47:50,799 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 2
+WARNING 2019-12-25 15:49:49,937 log 228 Bad Request: /users/login/
+WARNING 2019-12-25 15:49:49,937 basehttp 154 "POST /users/login/ HTTP/1.1" 400 67
+INFO 2019-12-25 15:50:25,691 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 15:51:48,130 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+ERROR 2019-12-25 15:52:57,821 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 15:52:57,821 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+ERROR 2019-12-25 15:54:00,699 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 15:54:00,699 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+ERROR 2019-12-25 15:55:55,737 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 15:55:55,737 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+ERROR 2019-12-25 15:56:50,901 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 15:56:50,901 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+INFO 2019-12-25 17:51:29,792 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+ERROR 2019-12-25 17:51:39,564 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 17:51:39,564 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+ERROR 2019-12-25 17:54:46,517 log 228 Internal Server Error: /carts/foods/
+ERROR 2019-12-25 17:54:46,517 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 2
+ERROR 2019-12-25 17:56:37,220 log 228 Internal Server Error: /carts/foods/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\cart\views.py", line 42, in get
+    "course_img": food.course_img.url,
+AttributeError: 'Food' object has no attribute 'course_img'
+ERROR 2019-12-25 17:56:37,222 basehttp 154 "GET /carts/foods/ HTTP/1.1" 500 20661
+INFO 2019-12-25 17:57:15,792 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+ERROR 2019-12-25 18:07:58,156 views 97 <class 'Exception'>
+ERROR 2019-12-25 18:07:58,157 log 228 Insufficient Storage: /orders/
+ERROR 2019-12-25 18:07:58,158 basehttp 154 "POST /orders/ HTTP/1.1" 507 35
+ERROR 2019-12-25 18:18:14,364 views 97 <class 'Exception'>
+ERROR 2019-12-25 18:18:14,365 log 228 Insufficient Storage: /orders/
+ERROR 2019-12-25 18:18:14,366 basehttp 154 "POST /orders/ HTTP/1.1" 507 35
+WARNING 2019-12-25 18:19:26,285 log 228 Not Found: /
+WARNING 2019-12-25 18:19:26,286 basehttp 154 "GET / HTTP/1.1" 404 3153
+ERROR 2019-12-25 18:23:34,868 views 97 <class 'Exception'>
+ERROR 2019-12-25 18:23:34,962 log 228 Insufficient Storage: /orders/
+ERROR 2019-12-25 18:23:34,963 basehttp 154 "POST /orders/ HTTP/1.1" 507 27
+ERROR 2019-12-25 18:56:29,817 log 228 Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 69, in post
+    food_price = food.get_course_price()
+AttributeError: 'Food' object has no attribute 'get_course_price'
+ERROR 2019-12-25 18:56:29,819 basehttp 154 "POST /orders/ HTTP/1.1" 500 20689
+ERROR 2019-12-25 18:57:08,478 log 228 Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 79, in post
+    real_price=food_price,
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\query.py", line 411, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % kwarg)
+TypeError: 'course_id' is an invalid keyword argument for this function
+ERROR 2019-12-25 18:57:08,481 basehttp 154 "POST /orders/ HTTP/1.1" 500 21208
+ERROR 2019-12-25 18:59:56,462 log 228 Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 78, in post
+    real_price=food_price,
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\query.py", line 411, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\db\models\base.py", line 485, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % kwarg)
+TypeError: 'course_id' is an invalid keyword argument for this function
+ERROR 2019-12-25 18:59:56,465 basehttp 154 "POST /orders/ HTTP/1.1" 500 21208
+INFO 2019-12-25 19:00:39,166 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-25 19:03:52,539 basehttp 154 "POST /orders/ HTTP/1.1" 200 70
+ERROR 2019-12-25 19:07:58,448 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\fields.py", line 453, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\fields.py", line 101, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Order' object has no attribute 'order_foods'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\fields.py", line 474, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `order_foods` on serializer `OrderDetailModelSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Order` instance.
+Original exception text was: 'Order' object has no attribute 'order_foods'.
+ERROR 2019-12-25 19:07:58,451 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22374
+INFO 2019-12-25 19:15:32,701 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 376
+ERROR 2019-12-25 19:25:32,215 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:25:32,218 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+ERROR 2019-12-25 19:27:34,969 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:27:34,973 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+ERROR 2019-12-25 19:27:43,713 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:27:43,714 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+INFO 2019-12-25 19:28:57,288 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 622
+INFO 2019-12-25 19:29:05,691 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 622
+INFO 2019-12-25 19:31:15,249 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 444
+ERROR 2019-12-25 19:34:17,008 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:34:17,010 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+ERROR 2019-12-25 19:36:09,652 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:36:09,654 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+INFO 2019-12-25 19:36:36,685 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 444
+ERROR 2019-12-25 19:38:44,529 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:38:44,532 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+ERROR 2019-12-25 19:42:54,634 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1081, in get_field_names
+    'Got %s.' % type(fields).__name__
+TypeError: The `fields` option must be a list or tuple or "__all__". Got str.
+ERROR 2019-12-25 19:42:54,637 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22126
+ERROR 2019-12-25 19:43:51,443 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:43:51,445 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+INFO 2019-12-25 19:44:10,639 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 444
+ERROR 2019-12-25 19:44:59,990 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:44:59,993 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+ERROR 2019-12-25 19:45:22,743 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:45:22,746 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22263
+ERROR 2019-12-25 19:46:26,598 log 228 Internal Server Error: /orders/20191225190352000000014842/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\orders\views.py", line 112, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 563, in data
+    ret = super(Serializer, self).data
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\serializers.py", line 1126, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'order_foods' was declared on serializer OrderDetailModelSerializer, but has not been included in the 'fields' option.
+ERROR 2019-12-25 19:46:26,601 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 500 22275
+WARNING 2019-12-25 19:47:16,568 log 228 Not Found: /
+WARNING 2019-12-25 19:47:16,568 basehttp 154 "GET / HTTP/1.1" 404 3153
+INFO 2019-12-25 19:47:23,283 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-25 19:47:23,324 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,325 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,337 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,345 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,355 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,359 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-25 19:47:23,361 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,363 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,363 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,365 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,365 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,367 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,368 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,371 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,376 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,379 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,382 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:23,474 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:28,811 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-25 19:47:31,347 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 18698
+INFO 2019-12-25 19:47:31,384 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:31,394 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:31,394 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:31,406 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:37,469 basehttp 154 "GET /xadmin/orders/order/ HTTP/1.1" 200 31996
+INFO 2019-12-25 19:47:37,508 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,525 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,525 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,526 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,526 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,526 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:37,528 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:37,530 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:39,506 basehttp 154 "GET /xadmin/orders/orderdetail/ HTTP/1.1" 200 30509
+INFO 2019-12-25 19:47:39,549 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:42,598 basehttp 154 "GET /xadmin/orders/orderdetail/1/update/ HTTP/1.1" 200 24592
+INFO 2019-12-25 19:47:42,644 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,645 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,645 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,650 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,650 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,655 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:42,656 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,656 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:42,658 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:47,586 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 31300
+INFO 2019-12-25 19:47:47,640 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:50,056 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 30694
+INFO 2019-12-25 19:47:50,106 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:53,078 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 31300
+INFO 2019-12-25 19:47:53,123 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:54,685 basehttp 154 "GET /xadmin/foods/food/add/ HTTP/1.1" 200 26894
+INFO 2019-12-25 19:47:54,736 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,752 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,753 basehttp 154 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,753 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,756 basehttp 154 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,756 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-25 19:47:54,913 basehttp 154 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,927 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,939 basehttp 154 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,951 basehttp 154 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,968 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,968 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,968 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,968 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:54,976 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:55,015 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 304 0
+INFO 2019-12-25 19:47:55,057 basehttp 154 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-12-25 19:49:10,650 basehttp 154 "POST /xadmin/foods/food/add/ HTTP/1.1" 302 0
+INFO 2019-12-25 19:49:10,711 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 32571
+INFO 2019-12-25 19:49:10,784 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+WARNING 2019-12-25 19:49:22,415 log 228 Not Acceptable: /orders/
+WARNING 2019-12-25 19:49:22,415 basehttp 154 "POST /orders/ HTTP/1.1" 406 76
+WARNING 2019-12-25 19:49:45,409 log 228 Not Acceptable: /orders/
+WARNING 2019-12-25 19:49:45,409 basehttp 154 "POST /orders/ HTTP/1.1" 406 76
+WARNING 2019-12-25 19:52:50,794 log 228 Method Not Allowed: /orders/
+WARNING 2019-12-25 19:52:50,795 basehttp 154 "PUT /orders/ HTTP/1.1" 405 45
+WARNING 2019-12-25 19:52:59,921 log 228 Not Acceptable: /orders/
+WARNING 2019-12-25 19:52:59,921 basehttp 154 "POST /orders/ HTTP/1.1" 406 76
+WARNING 2019-12-25 19:54:00,850 log 228 Method Not Allowed: /orders/
+WARNING 2019-12-25 19:54:00,850 basehttp 154 "PUT /orders/ HTTP/1.1" 405 45
+INFO 2019-12-25 19:54:54,391 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-25 19:55:41,794 basehttp 154 "POST /orders/ HTTP/1.1" 200 70
+INFO 2019-12-25 19:57:42,478 basehttp 154 "GET /orders/20191225195541000000013439/ HTTP/1.1" 200 444
+INFO 2019-12-25 22:01:21,554 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:01:21,555 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:01:22,037 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 22:01:22,041 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 22:01:22,042 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 22:01:22,042 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 22:04:20,350 basehttp 154 "OPTIONS /users/register/ HTTP/1.1" 200 0
+WARNING 2019-12-25 22:04:20,361 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:04:20,361 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:06:06,759 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:06:06,760 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:06:33,567 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:06:33,567 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+INFO 2019-12-25 22:07:12,731 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:07:12,738 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:07:20,895 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2019-12-25 22:07:21,018 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 22:07:21,083 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:07:21,087 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+WARNING 2019-12-25 22:07:39,079 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:07:39,080 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:11:21,449 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 22:11:21,449 basehttp 154 "POST /users/register/ HTTP/1.1" 400 80
+WARNING 2019-12-25 22:11:54,232 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 22:11:54,232 basehttp 154 "POST /users/register/ HTTP/1.1" 400 40
+WARNING 2019-12-25 22:12:01,972 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 22:12:01,972 basehttp 154 "POST /users/register/ HTTP/1.1" 400 60
+WARNING 2019-12-25 22:15:13,088 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:15:13,088 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:15:20,863 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:15:20,863 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:16:38,257 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:16:38,258 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:16:39,071 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:16:39,071 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:16:39,254 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:16:39,255 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:16:39,446 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:16:39,446 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:16:39,630 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:16:39,630 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:18:21,605 log 228 Bad Request: /users/register/
+WARNING 2019-12-25 22:18:21,606 basehttp 154 "POST /users/register/ HTTP/1.1" 400 60
+INFO 2019-12-25 22:19:41,773 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:19:41,786 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:19:58,048 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 22:20:43,650 basehttp 154 "POST /users/login/ HTTP/1.1" 200 197
+INFO 2019-12-25 22:20:43,697 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:20:43,703 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+WARNING 2019-12-25 22:21:03,887 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:21:03,887 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+WARNING 2019-12-25 22:28:27,965 log 228 Forbidden: /users/register/
+WARNING 2019-12-25 22:28:27,966 basehttp 154 "POST /users/register/ HTTP/1.1" 403 58
+INFO 2019-12-25 22:33:47,793 basehttp 154 "POST /users/register/ HTTP/1.1" 201 213
+INFO 2019-12-25 22:33:52,292 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:33:52,303 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:33:52,334 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 22:33:52,341 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 22:33:52,345 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 22:33:52,352 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 22:34:55,336 basehttp 154 "POST /users/login/ HTTP/1.1" 200 213
+INFO 2019-12-25 22:34:55,378 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:34:55,387 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:38:23,979 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:40:49,081 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:41:26,721 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:41:26,726 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:41:33,350 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:41:33,351 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:42:22,017 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:42:22,018 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:42:25,070 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:42:25,071 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:43:06,185 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:43:06,190 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:43:50,623 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:44:08,066 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:44:08,067 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:44:14,759 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:44:14,760 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:49:16,745 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:50:45,654 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:50:45,657 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:50:48,258 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:50:48,261 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:50:53,393 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:50:53,393 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:53:43,070 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:53:43,071 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:54:55,872 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:54:55,876 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:54:56,283 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 22:54:56,288 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 22:54:56,289 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 22:54:56,289 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 22:55:28,777 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 22:55:28,780 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 22:55:29,117 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 22:55:29,121 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 22:55:29,122 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 22:55:29,124 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 23:01:12,922 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:01:12,926 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:01:14,345 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:01:14,349 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:01:41,762 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2019-12-25 23:01:41,879 basehttp 154 "POST /users/login/ HTTP/1.1" 200 213
+INFO 2019-12-25 23:01:41,922 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:01:41,927 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:05:30,298 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:05:30,301 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:05:30,641 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 23:05:30,642 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 23:05:30,642 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 23:05:30,646 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 23:06:42,893 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:06:42,896 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:06:44,194 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:06:44,195 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:08:38,874 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:09:43,163 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:11:23,350 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:11:23,354 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:12:05,983 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:12:05,988 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:12:07,331 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-25 23:12:07,332 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:12:07,931 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-25 23:12:07,934 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-25 23:12:07,935 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-25 23:12:07,936 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-25 23:14:25,767 basehttp 154 "GET /nav/ HTTP/1.1" 200 51
+INFO 2019-12-25 23:14:25,771 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
