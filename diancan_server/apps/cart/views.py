@@ -23,24 +23,27 @@ class CartAPIView(APIView):
         cart_goods_list = redis.hgetall("cart_%s" % user_id)  # 商品课程列表
         cart_goods_selects = redis.smembers("cart_selected_%s" % user_id)
         data_list = []
-        try:
-            for food_id_bytes, expire_bytes in cart_goods_list.items():
-                food_id = int(food_id_bytes.decode())
-                food = Food.objects.get(pk=food_id)
-                try:
-                    price = food.price
-                except:
-                    price = 0
+        print('cart_goods_list', cart_goods_list)
+        print('cart_goods_selects', cart_goods_selects)
+        # try:
+        for food_id_bytes, expire_bytes in cart_goods_list.items():
+            food_id = int(food_id_bytes.decode())
+            food = Food.objects.get(pk=food_id)
+            print('food', food)
+            try:
+                price = food.price
+            except:
+                price = 0
 
-                data_list.append({
-                    "id": food_id,
-                    "food_img": food.food_img.url,
-                    "name": food.name,
-                    "price": price,
-                    "is_select": food_id_bytes in cart_goods_selects,
-                })
-        except:
-            return Response(data_list, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            data_list.append({
+                "id": food_id,
+                "food_img": food.food_img.url,
+                "name": food.name,
+                "price": price,
+                "is_select": food_id_bytes in cart_goods_selects,
+            })
+        # except:
+        #     return Response(data_list, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         print(data_list)
         # 返回查询结果
         return Response(data_list, status=status.HTTP_200_OK)

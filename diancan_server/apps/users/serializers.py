@@ -79,3 +79,32 @@ class UserModelSerializer(serializers.ModelSerializer):
         user.token = jwt_encode_handler(payload)
 
         return user
+
+
+"""会员订单"""
+from orders.models import Order, OrderDetail
+
+
+class OrderDetailListModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderDetail
+        fields = ("price", "real_price", "food_img", "food_name", "food")
+
+
+class OrderListModelSerializer(serializers.ModelSerializer):
+    order_foods = OrderDetailListModelSerializer(many=True)
+
+    class Meta:
+        model = Order
+        fields = (
+        "order_foods", "id", "create_time", "pay_time", "order_number", "real_price", "total_price", "order_status",
+        "order_status_text", "pay_type")
+
+
+class UserOrderModelSerializer(serializers.ModelSerializer):
+    user_orders = OrderListModelSerializer(many=True)
+
+    class Meta:
+        model = User
+        # fields = ("username","身份信息..")
+        fields = ("username", "user_orders")
