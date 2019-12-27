@@ -33,7 +33,6 @@ class UserFood(BaseModel):
     buy_number = models.CharField(max_length=128, null=True, verbose_name="账单号")
     buy_type = models.SmallIntegerField(choices=pay_choices, default=0, verbose_name="购买方式")
     pay_time = models.DateTimeField(null=True, verbose_name="购买时间")
-    out_time = models.DateTimeField(null=True, verbose_name="过期时间")
 
     class Meta:
         db_table = 'dc_user'
