@@ -2,6 +2,10 @@ from rest_framework import serializers
 from .models import User
 import re
 
+class UserMoneySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ("id", "money")
 
 class UserModelSerializer(serializers.ModelSerializer):
     # sms_code = serializers.CharField(max_length=6,min_length=6,required=True,help_text="短信验证码")

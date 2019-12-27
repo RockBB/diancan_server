@@ -2041,3 +2041,45 @@ WARNING 2019-12-27 00:40:15,917 log 228 Not Found: /coupon/list/
 WARNING 2019-12-27 00:40:15,923 basehttp 154 "GET /coupon/list/?user_id=1 HTTP/1.1" 404 3217
 INFO 2019-12-27 00:40:15,928 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 299
 INFO 2019-12-27 00:40:15,928 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-27 16:06:46,836 basehttp 154 "POST /users/login/ HTTP/1.1" 200 228
+INFO 2019-12-27 18:12:23,019 basehttp 154 "PUT /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 18:15:06,852 basehttp 154 "PUT /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 18:20:55,975 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 18:26:54,834 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 18:28:43,641 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+ERROR 2019-12-27 18:59:57,527 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-27 18:59:57,527 basehttp 154 "POST /users/money/ HTTP/1.1" 500 0
+INFO 2019-12-27 19:02:32,075 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 19:03:12,100 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 19:04:04,609 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 19:04:24,432 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-27 19:05:44,280 basehttp 154 "POST /users/money/ HTTP/1.1" 200 0
+ERROR 2019-12-27 19:07:12,843 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-27 19:07:12,844 basehttp 154 "POST /users/money/ HTTP/1.1" 500 0
+ERROR 2019-12-27 19:09:04,085 log 228 Internal Server Error: /users/money/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\diancan_server\apps\users\views.py", line 27, in post
+    money = user_money - money
+TypeError: unsupported operand type(s) for -: 'decimal.Decimal' and 'str'
+ERROR 2019-12-27 19:09:04,087 basehttp 154 "POST /users/money/ HTTP/1.1" 500 20894
+ERROR 2019-12-27 19:10:14,209 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-27 19:10:14,209 basehttp 154 "POST /users/money/ HTTP/1.1" 500 0
+INFO 2019-12-27 19:11:20,216 basehttp 154 "POST /users/money/ HTTP/1.1" 200 16
