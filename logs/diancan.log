@@ -2598,3 +2598,76 @@ INFO 2019-12-28 00:53:56,972 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
 INFO 2019-12-28 00:53:56,977 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 299
 ERROR 2019-12-28 00:54:00,170 log 228 Internal Server Error: /users/money/
 ERROR 2019-12-28 00:54:00,171 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+INFO 2019-12-28 09:31:26,746 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:31:26,747 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-28 09:31:26,769 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 200 255262
+INFO 2019-12-28 09:31:26,769 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 200 334554
+INFO 2019-12-28 09:31:26,775 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 200 41737
+INFO 2019-12-28 09:31:26,776 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 200 318608
+INFO 2019-12-28 09:31:39,785 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2019-12-28 09:31:39,890 basehttp 154 "POST /users/login/ HTTP/1.1" 200 212
+INFO 2019-12-28 09:31:42,286 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-28 09:31:42,287 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:31:46,982 basehttp 154 "OPTIONS /users/1/orders/ HTTP/1.1" 200 0
+INFO 2019-12-28 09:31:46,987 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:31:47,010 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1910
+INFO 2019-12-28 09:31:47,074 basehttp 154 "GET /media/food/tuDuShaoji.jpg HTTP/1.1" 200 72100
+INFO 2019-12-28 09:31:47,075 basehttp 154 "GET /media/food/yuxiang.jpg HTTP/1.1" 200 33658
+INFO 2019-12-28 09:31:55,809 basehttp 154 "OPTIONS /orders/20191225190352000000014842/ HTTP/1.1" 200 0
+INFO 2019-12-28 09:31:55,813 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:31:55,820 basehttp 154 "GET /orders/20191225190352000000014842/ HTTP/1.1" 200 299
+INFO 2019-12-28 09:31:57,158 basehttp 154 "OPTIONS /users/money/ HTTP/1.1" 200 0
+ERROR 2019-12-28 09:31:57,282 log 228 Internal Server Error: /users/money/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\users\views.py", line 57, in post
+    UserFood.objects.create(user=order.user,course=detail.course,
+AttributeError: 'OrderDetail' object has no attribute 'course'
+ERROR 2019-12-28 09:31:57,284 basehttp 154 "POST /users/money/ HTTP/1.1" 500 21105
+ERROR 2019-12-28 09:32:57,948 log 228 Internal Server Error: /users/money/
+Traceback (most recent call last):
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\ufactory\Envs\diancan\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\project\diancan_server\diancan_server\apps\users\views.py", line 57, in post
+    UserFood.objects.create(user=order.user,food=detail.course,
+AttributeError: 'OrderDetail' object has no attribute 'course'
+ERROR 2019-12-28 09:32:57,952 basehttp 154 "POST /users/money/ HTTP/1.1" 500 21103
+INFO 2019-12-28 09:34:09,919 basehttp 154 "POST /users/money/ HTTP/1.1" 200 40
+INFO 2019-12-28 09:36:09,004 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-28 09:36:09,007 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:36:20,877 basehttp 154 "OPTIONS /users/1/orders/ HTTP/1.1" 200 0
+INFO 2019-12-28 09:36:20,882 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-28 09:36:20,905 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1940

@@ -24,11 +24,11 @@ class UserMoneyAPIView(APIView):
         """购物车更新商品信息"""
         # 获取当前登录用户ID
         user_id = request.user.id
-        print(user_id)
+        # print(user_id)
         # 获取客户端发送过来的课程ID
         money = request.data.get("money")
         order_number = request.data.get("order_number")
-        print(money)
+        # print(money)
         try:
 
             user_money = User.objects.get(id=user_id).money
@@ -39,7 +39,7 @@ class UserMoneyAPIView(APIView):
 
             try:
                 order = Order.objects.get(order_number=order_number)
-                print('order', order)
+                # print('order', order)
             except Order.DoesNotExist:
                 log.error("订单号:%s不存在!" % order_number )
                 return Response({"message": "无效的订单号"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -54,7 +54,8 @@ class UserMoneyAPIView(APIView):
                 detail_list = order.order_foods.all()
                 course_list = []
                 for detail in detail_list:
-                    UserFood.objects.create(user=order.user,course=detail.course,
+                    # print('ddd', detail)
+                    UserFood.objects.create(user=order.user,food=detail.food,
                                             buy_number=order_number,buy_type=0,
                                             pay_time=datetime.now(),)
 

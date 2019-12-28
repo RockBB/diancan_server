@@ -22,11 +22,11 @@ from foods.models import Food
 
 class UserFood(BaseModel):
     pay_choices = (
-        (0, '支付宝'),
-        (1, '微信支付'),
-        (2, '免费活动'),
-        (3, '活动赠品'),
-        (4, '系统赠送'),
+        (0, '会员账户支付'),
+        (1, '支付宝'),
+        (2, '微信支付'),
+        (3, '免费活动'),
+        (4, '活动赠品'),
     )
     user = models.ForeignKey(User, related_name='user_cp', on_delete=models.DO_NOTHING, verbose_name="用户")
     food = models.ForeignKey(Food, related_name='foods_users', on_delete=models.DO_NOTHING, verbose_name="课程")
