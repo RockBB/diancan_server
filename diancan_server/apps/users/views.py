@@ -20,6 +20,17 @@ class UserMoneyAPIView(APIView):
     # serializer_class = UserMoneySerializer
     queryset = User.objects.all()
 
+    def get(self, request):
+        """获取购物车商品课程列表"""
+        # 获取当前用户ID
+        # user_id = 1
+        user_id = request.user.id
+        if user_id:
+            user_money = User.objects.get(id=user_id).money
+            return Response({"money": user_money}, status=status.HTTP_200_OK)
+        else:
+            return Response({"message": "无效的请求"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
     def post(self, request):
         """购物车更新商品信息"""
         # 获取当前登录用户ID
@@ -57,7 +68,7 @@ class UserMoneyAPIView(APIView):
                     # print('ddd', detail)
                     UserFood.objects.create(user=order.user,food=detail.food,
                                             buy_number=order_number,buy_type=0,
-                                            pay_time=dt.strftime('%Y-%m-%d %H:%M:%S %f'),)
+                                            pay_time=dt.strftime('%Y-%m-%d %H:%M:%S'),)
 
                     course_list.append(detail.food.name)
 

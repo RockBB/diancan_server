@@ -2941,3 +2941,643 @@ INFO 2019-12-29 11:55:15,898 basehttp 154 "GET /static/xadmin/vendor/bootstrap-d
 INFO 2019-12-29 11:55:15,910 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
 INFO 2019-12-29 11:55:55,239 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 32540
 INFO 2019-12-29 11:55:55,294 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:02:04,782 basehttp 154 "GET /banner/ HTTP/1.1" 200 344
+INFO 2019-12-29 19:02:04,783 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:02:04,871 basehttp 154 "GET /media/banner/cp4.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:02:04,874 basehttp 154 "GET /media/banner/cp3.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:02:04,875 basehttp 154 "GET /media/banner/cp2.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:02:04,876 basehttp 154 "GET /media/banner/cp1.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:02:54,359 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 17114
+INFO 2019-12-29 19:02:54,424 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:02:55,897 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 17114
+WARNING 2019-12-29 19:03:06,322 log 228 Not Found: /favicon.ico
+WARNING 2019-12-29 19:03:06,323 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3204
+INFO 2019-12-29 19:05:51,674 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 32540
+INFO 2019-12-29 19:05:51,963 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:09,259 basehttp 154 "GET /xadmin/home/bannerinfo/4/update/ HTTP/1.1" 200 22899
+INFO 2019-12-29 19:06:09,309 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:14,897 basehttp 154 "POST /xadmin/home/bannerinfo/4/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:06:14,972 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 32765
+INFO 2019-12-29 19:06:15,030 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:16,791 basehttp 154 "GET /xadmin/home/bannerinfo/3/update/ HTTP/1.1" 200 22900
+INFO 2019-12-29 19:06:16,847 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:22,200 basehttp 154 "POST /xadmin/home/bannerinfo/3/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:06:22,278 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 32764
+INFO 2019-12-29 19:06:22,331 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:25,364 basehttp 154 "GET /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 200 22901
+INFO 2019-12-29 19:06:25,412 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:28,459 basehttp 154 "POST /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:06:28,564 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 32763
+INFO 2019-12-29 19:06:28,645 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:30,670 basehttp 154 "GET /xadmin/home/bannerinfo/1/update/ HTTP/1.1" 200 22899
+INFO 2019-12-29 19:06:30,723 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:33,382 basehttp 154 "POST /xadmin/home/bannerinfo/1/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:06:33,464 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 32762
+INFO 2019-12-29 19:06:33,519 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:06:38,579 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:06:38,580 basehttp 154 "GET /banner/ HTTP/1.1" 200 2
+INFO 2019-12-29 19:06:50,212 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22419
+INFO 2019-12-29 19:06:50,261 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:07:46,844 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:07:46,940 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22758
+INFO 2019-12-29 19:07:46,993 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:08:11,478 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:08:11,570 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22758
+INFO 2019-12-29 19:08:11,623 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:08:32,600 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:08:32,692 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22758
+INFO 2019-12-29 19:08:32,739 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:08:54,558 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:08:54,644 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22758
+INFO 2019-12-29 19:08:54,694 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:09:07,149 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:09:07,239 basehttp 154 "GET /xadmin/home/bannerinfo/add/ HTTP/1.1" 200 22758
+INFO 2019-12-29 19:09:07,290 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:09:41,988 basehttp 154 "POST /xadmin/home/bannerinfo/add/ HTTP/1.1" 302 0
+INFO 2019-12-29 19:09:42,091 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 36327
+INFO 2019-12-29 19:09:42,145 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 19:09:50,697 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:09:50,697 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 19:09:50,838 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 200 48447
+INFO 2019-12-29 19:09:50,838 basehttp 154 "GET /media/banner/m4.jpeg HTTP/1.1" 200 39542
+INFO 2019-12-29 19:09:50,843 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 200 45074
+INFO 2019-12-29 19:09:50,844 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 200 135468
+INFO 2019-12-29 19:09:50,846 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 200 55554
+INFO 2019-12-29 19:29:44,640 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 19:29:44,647 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:29:44,647 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:29:44,729 basehttp 154 "GET /media/food/yuxiang.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:29:44,730 basehttp 154 "GET /media/food/tuDuShaoji.jpg HTTP/1.1" 304 0
+INFO 2019-12-29 19:29:51,122 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:29:52,944 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:29:53,736 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:30:23,115 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:30:26,482 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:30:27,648 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:30:28,378 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:30:28,944 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:31:27,748 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:31:27,865 basehttp 154 "POST /users/login/ HTTP/1.1" 200 212
+INFO 2019-12-29 19:31:29,765 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 19:31:29,771 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:31:29,772 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:31:47,505 basehttp 154 "OPTIONS /users/1/orders/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:31:47,514 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:31:47,539 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 419
+INFO 2019-12-29 19:33:35,385 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 19:33:35,391 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:33:35,392 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:33:38,337 basehttp 154 "OPTIONS /carts/foods/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:33:38,348 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 19:33:41,257 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 200
+INFO 2019-12-29 19:33:41,258 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:34:05,279 basehttp 154 "OPTIONS /carts/foods/?food_id=1 HTTP/1.1" 200 0
+INFO 2019-12-29 19:34:05,289 basehttp 154 "DELETE /carts/foods/?food_id=1 HTTP/1.1" 204 39
+INFO 2019-12-29 19:34:11,536 basehttp 154 "OPTIONS /orders/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:34:11,560 basehttp 154 "POST /orders/ HTTP/1.1" 200 70
+INFO 2019-12-29 19:34:15,719 basehttp 154 "OPTIONS /orders/20191229193411000000013262/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:34:15,729 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:34:15,748 basehttp 154 "GET /orders/20191229193411000000013262/ HTTP/1.1" 200 296
+INFO 2019-12-29 19:34:30,009 basehttp 154 "OPTIONS /users/money/ HTTP/1.1" 200 0
+ERROR 2019-12-29 19:34:30,050 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-29 19:34:30,051 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+ERROR 2019-12-29 19:34:33,197 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-29 19:34:33,198 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+INFO 2019-12-29 19:34:35,917 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 2
+INFO 2019-12-29 19:34:35,917 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:34:59,615 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 19:34:59,621 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:34:59,622 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:35:01,029 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 19:35:02,208 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 19:35:02,210 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:35:14,781 basehttp 154 "PUT /carts/foods/ HTTP/1.1" 200 42
+INFO 2019-12-29 19:35:17,420 basehttp 154 "POST /orders/ HTTP/1.1" 200 70
+INFO 2019-12-29 19:35:19,319 basehttp 154 "OPTIONS /orders/20191229193517000000010600/ HTTP/1.1" 200 0
+INFO 2019-12-29 19:35:19,336 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:35:19,346 basehttp 154 "GET /orders/20191229193517000000010600/ HTTP/1.1" 200 297
+ERROR 2019-12-29 19:35:23,073 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-29 19:35:23,073 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+INFO 2019-12-29 19:36:01,860 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:36:01,865 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1123
+INFO 2019-12-29 19:36:05,522 basehttp 154 "GET /orders/20191229193411000000013262/ HTTP/1.1" 200 296
+INFO 2019-12-29 19:36:05,523 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+ERROR 2019-12-29 19:36:06,856 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-29 19:36:06,857 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+ERROR 2019-12-29 19:37:34,519 log 228 Internal Server Error: /users/money/
+ERROR 2019-12-29 19:37:34,519 basehttp 154 "POST /users/money/ HTTP/1.1" 500 27
+INFO 2019-12-29 19:38:30,514 basehttp 154 "GET /orders/20191229193411000000013262/ HTTP/1.1" 200 296
+INFO 2019-12-29 19:38:30,527 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+ERROR 2019-12-29 19:38:32,417 log 228 Internal Server Error: /users/money/
+Traceback (most recent call last):
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 466, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\14612\Desktop\diancan\diancan_server\diancan_server\apps\users\views.py", line 60, in post
+    pay_time=dt.strftime('%Y-%m-%d %H:%M:%S %f'),)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\sql\compiler.py", line 1288, in execute_sql
+    for sql, params in self.as_sql():
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\sql\compiler.py", line 1241, in as_sql
+    for obj in self.query.objs
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\sql\compiler.py", line 1241, in <listcomp>
+    for obj in self.query.objs
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\sql\compiler.py", line 1240, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\sql\compiler.py", line 1182, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\fields\__init__.py", line 790, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\fields\__init__.py", line 1429, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\fields\__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\fields\__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "C:\Users\14612\Envs\luffy\lib\site-packages\django\db\models\fields\__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ['’2019-12-29 19:38:32 315046‘ 必须为合法的日期时间格式，请使用 YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] 格式。']
+ERROR 2019-12-29 19:38:32,424 basehttp 154 "POST /users/money/ HTTP/1.1" 500 24614
+INFO 2019-12-29 19:39:32,181 basehttp 154 "POST /users/money/ HTTP/1.1" 200 40
+INFO 2019-12-29 19:40:35,370 basehttp 154 "GET /orders/20191229193411000000013262/ HTTP/1.1" 200 326
+INFO 2019-12-29 19:40:35,382 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:39,960 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:39,969 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1153
+INFO 2019-12-29 19:40:41,109 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:41,109 basehttp 154 "GET /orders/20191229193517000000010600/ HTTP/1.1" 200 297
+INFO 2019-12-29 19:40:43,526 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:43,532 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 19:40:43,611 basehttp 154 "GET /media/banner/m4.jpeg HTTP/1.1" 200 39542
+INFO 2019-12-29 19:40:43,613 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 200 48447
+INFO 2019-12-29 19:40:43,615 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 200 45074
+INFO 2019-12-29 19:40:43,617 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 200 55554
+INFO 2019-12-29 19:40:43,617 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 200 135468
+INFO 2019-12-29 19:40:49,816 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 19:40:49,817 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 19:40:49,822 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:52,680 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:40:52,680 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 19:41:15,238 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:41:15,351 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 2
+INFO 2019-12-29 19:41:21,190 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 19:41:21,200 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1153
+INFO 2019-12-29 20:14:44,699 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 20:14:44,704 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 20:14:44,704 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 20:18:31,845 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 30687
+INFO 2019-12-29 20:18:31,919 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 20:18:33,745 basehttp 154 "GET /xadmin/foods/food/2/update/ HTTP/1.1" 200 25808
+INFO 2019-12-29 20:18:33,809 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-29 20:18:33,809 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-29 20:18:33,809 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-29 20:18:33,815 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 20:18:33,894 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-hans.js HTTP/1.1" 200 694
+INFO 2019-12-29 20:18:33,894 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-29 20:18:33,894 basehttp 154 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2216
+INFO 2019-12-29 20:18:33,924 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-29 20:18:33,927 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-29 20:18:34,486 basehttp 154 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 701922
+INFO 2019-12-29 20:18:34,652 basehttp 154 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 200 338
+INFO 2019-12-29 20:18:34,676 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 200 47805
+INFO 2019-12-29 20:18:34,697 basehttp 154 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 200 18573
+INFO 2019-12-29 20:18:34,721 basehttp 154 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 200 5579
+INFO 2019-12-29 20:18:34,746 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 200 381
+INFO 2019-12-29 20:18:34,751 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 200 419
+INFO 2019-12-29 20:18:34,751 basehttp 154 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 200 1306
+INFO 2019-12-29 20:18:34,800 basehttp 154 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 200 12421
+INFO 2019-12-29 20:18:34,854 basehttp 154 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 200 3094
+INFO 2019-12-29 20:18:56,608 basehttp 154 "GET /foods/list/?ordering=-id&page=1&course_category=1 HTTP/1.1" 200 408
+INFO 2019-12-29 20:18:57,783 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:05:45,508 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 21:05:57,186 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:05:57,190 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1153
+INFO 2019-12-29 21:06:07,108 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:06:07,111 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:06:07,206 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:06:07,206 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:06:07,212 basehttp 154 "GET /media/banner/m4.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:06:07,212 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:06:07,215 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:08:05,201 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:08:05,206 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:08:15,890 basehttp 154 "POST /users/login/ HTTP/1.1" 200 212
+INFO 2019-12-29 21:08:17,366 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:08:17,371 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:11:04,651 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:11:04,652 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:04,652 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:11:08,861 basehttp 154 "GET /foods/list/?ordering=-id&page=1&course_category=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:09,618 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:10,230 basehttp 154 "GET /foods/list/?ordering=-id&page=1&course_category=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:10,939 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:11,466 basehttp 154 "GET /foods/list/?ordering=-id&page=1&course_category=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:11:29,451 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 21:11:29,455 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:11:32,031 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:11:32,036 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:11:39,917 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:11:39,917 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 21:11:42,144 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:11:42,147 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:12:11,401 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 21:12:11,403 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:15:00,248 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:15:00,248 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:15:02,271 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:15:02,271 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:15:02,277 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:15:04,006 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 21:15:04,007 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:15:08,693 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:15:08,694 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:15:08,699 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:15:10,537 basehttp 154 "GET /banner/ HTTP/1.1" 200 460
+INFO 2019-12-29 21:15:10,541 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:46:57,587 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 30687
+INFO 2019-12-29 21:46:57,643 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:46:59,437 basehttp 154 "GET /xadmin/foods/foodcategory/ HTTP/1.1" 200 29110
+INFO 2019-12-29 21:46:59,491 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:02,651 basehttp 154 "GET /xadmin/foods/food/ HTTP/1.1" 200 30687
+INFO 2019-12-29 21:47:02,702 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:07,469 basehttp 154 "GET /xadmin/home/navinfo/ HTTP/1.1" 200 31199
+INFO 2019-12-29 21:47:07,521 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:08,734 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 36035
+INFO 2019-12-29 21:47:08,783 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:31,028 basehttp 154 "GET /xadmin/home/bannerinfo/10/update/ HTTP/1.1" 200 22876
+INFO 2019-12-29 21:47:31,081 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:31,192 basehttp 154 "GET /media/banner/m4.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:47:42,511 basehttp 154 "POST /xadmin/home/bannerinfo/10/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 21:47:42,602 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 36258
+INFO 2019-12-29 21:47:42,655 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:47:48,305 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:47:48,309 basehttp 154 "GET /banner/ HTTP/1.1" 200 390
+INFO 2019-12-29 21:47:48,392 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:47:48,394 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:47:48,395 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:47:48,396 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 21:47:50,789 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:47:50,792 basehttp 154 "GET /banner/ HTTP/1.1" 200 390
+INFO 2019-12-29 21:49:28,296 basehttp 154 "POST /xadmin/home/bannerinfo/? HTTP/1.1" 200 17388
+INFO 2019-12-29 21:49:28,353 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:49:30,108 basehttp 154 "POST /xadmin/home/bannerinfo/? HTTP/1.1" 302 0
+INFO 2019-12-29 21:49:30,235 basehttp 154 "GET /xadmin/home/bannerinfo/ HTTP/1.1" 200 35672
+INFO 2019-12-29 21:49:30,293 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:49:41,535 basehttp 154 "GET /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 200 22893
+INFO 2019-12-29 21:49:41,588 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:49:51,936 basehttp 154 "POST /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 21:49:52,030 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 35673
+INFO 2019-12-29 21:49:52,086 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:50:30,225 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:50:30,230 basehttp 154 "GET /banner/ HTTP/1.1" 200 477
+INFO 2019-12-29 21:51:04,039 basehttp 154 "GET /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 200 22901
+INFO 2019-12-29 21:51:04,098 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:51:06,450 basehttp 154 "POST /xadmin/home/bannerinfo/2/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 21:51:06,539 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 35672
+INFO 2019-12-29 21:51:06,608 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:51:09,282 basehttp 154 "GET /xadmin/home/bannerinfo/3/update/ HTTP/1.1" 200 22892
+INFO 2019-12-29 21:51:09,335 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:51:17,759 basehttp 154 "POST /xadmin/home/bannerinfo/3/update/ HTTP/1.1" 302 0
+INFO 2019-12-29 21:51:17,850 basehttp 154 "GET /xadmin/home/bannerinfo/? HTTP/1.1" 200 35673
+INFO 2019-12-29 21:51:17,910 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+INFO 2019-12-29 21:51:21,305 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:51:21,305 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:52:19,687 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:52:19,687 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:58:20,537 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:58:20,541 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:58:35,110 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2019-12-29 21:58:35,231 basehttp 154 "POST /users/login/ HTTP/1.1" 200 212
+INFO 2019-12-29 21:58:36,584 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:58:36,589 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:58:41,355 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:58:41,361 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:58:41,361 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:58:49,848 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:58:49,852 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:59:17,263 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:27,157 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:27,158 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:59:35,212 basehttp 154 "POST /users/login/ HTTP/1.1" 200 212
+INFO 2019-12-29 21:59:36,325 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:36,332 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:59:39,634 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:59:39,638 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:59:39,641 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:42,312 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:42,328 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:59:44,119 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:59:44,127 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:44,128 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 21:59:49,096 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:49,100 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 21:59:51,650 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 21:59:51,654 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 21:59:51,655 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:13:32,688 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:22:59,213 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:22:59,224 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:22:59,225 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:23:02,004 basehttp 154 "OPTIONS /carts/foods/ HTTP/1.1" 200 0
+INFO 2019-12-29 22:23:02,016 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 22:23:05,886 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:23:05,889 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:23:05,892 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:29:15,530 basehttp 154 "OPTIONS /users/money/ HTTP/1.1" 200 0
+INFO 2019-12-29 22:29:15,537 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:29:15,541 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:29:15,547 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:29:46,021 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:29:46,027 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:29:46,028 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:29:48,592 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:29:48,601 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:29:48,601 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:29:48,607 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:29:58,774 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:29:58,777 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:29:58,779 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:29:58,786 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:29:58,789 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:30:38,325 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:30:38,327 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:30:38,328 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:30:41,825 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:30:41,830 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:30:41,831 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:30:41,835 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:31:46,867 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:31:46,868 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:31:46,873 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:31:46,874 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:31:46,875 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:32:24,802 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:32:24,807 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:24,809 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:32:24,810 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:24,811 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:28,276 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:28,292 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:32:28,298 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:28,298 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:28,299 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:32:29,998 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:30,005 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 22:32:30,007 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:30,007 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:30,059 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:32:30,059 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:32:30,059 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:32:30,060 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:32:33,627 basehttp 154 "OPTIONS /users/1/orders/ HTTP/1.1" 200 0
+INFO 2019-12-29 22:32:33,652 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:33,655 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:33,655 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:33,674 basehttp 154 "GET /users/1/orders/ HTTP/1.1" 200 1153
+INFO 2019-12-29 22:32:37,783 basehttp 154 "OPTIONS /orders/20191229193517000000010600/ HTTP/1.1" 200 0
+INFO 2019-12-29 22:32:37,799 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:37,807 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:37,807 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:37,824 basehttp 154 "GET /orders/20191229193517000000010600/ HTTP/1.1" 200 297
+INFO 2019-12-29 22:32:39,320 basehttp 154 "POST /users/money/ HTTP/1.1" 200 40
+INFO 2019-12-29 22:32:41,245 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:32:41,251 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:32:41,251 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:32:41,252 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 22:36:52,723 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:36:52,724 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:36:52,724 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:36:55,834 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:36:55,835 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:36:55,835 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:36:55,842 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:36:58,411 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:36:58,417 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:36:58,421 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:36:58,425 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 99
+INFO 2019-12-29 22:36:58,425 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:37:00,703 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 22:37:02,098 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 200
+INFO 2019-12-29 22:37:02,101 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:37:02,103 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:37:02,109 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 200
+INFO 2019-12-29 22:37:06,158 basehttp 154 "OPTIONS /carts/foods/?food_id=2 HTTP/1.1" 200 0
+INFO 2019-12-29 22:37:06,167 basehttp 154 "DELETE /carts/foods/?food_id=2 HTTP/1.1" 204 39
+INFO 2019-12-29 22:37:48,861 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:37:48,867 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 22:37:48,868 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:37:48,869 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:37:50,770 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:37:50,777 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:37:50,780 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:37:50,785 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:37:50,786 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:37:52,194 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:37:52,195 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:37:52,202 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:37:52,206 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:41:05,807 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:41:05,814 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:41:05,815 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:41:05,820 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:41:07,744 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:41:07,747 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:41:07,753 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:41:07,754 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:41:07,754 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:41:09,104 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 22:41:09,639 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 22:41:12,791 basehttp 154 "POST /carts/foods/ HTTP/1.1" 200 55
+INFO 2019-12-29 22:41:15,280 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:41:15,281 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:41:15,281 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 200
+INFO 2019-12-29 22:41:15,293 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 200
+INFO 2019-12-29 22:41:20,843 basehttp 154 "DELETE /carts/foods/?food_id=2 HTTP/1.1" 204 39
+INFO 2019-12-29 22:41:20,864 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:44:07,457 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:44:07,458 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:44:07,458 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:44:07,466 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:47:39,520 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:47:39,524 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:47:39,525 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:47:39,533 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:48:05,022 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:48:05,029 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:48:05,029 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:48:05,036 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:53:38,452 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:53:38,458 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:53:38,464 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:53:38,466 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:53:38,466 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:53:41,459 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:53:41,460 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:53:41,465 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:53:41,466 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 22:53:41,586 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:53:41,587 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:53:41,588 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:53:41,588 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 22:53:46,271 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:53:46,281 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:53:46,287 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:53:46,288 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:53:46,289 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:53:48,262 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:53:48,263 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:53:48,267 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:53:48,271 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:54:41,847 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:54:41,860 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:54:41,862 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:54:41,862 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:54:41,863 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:55:29,596 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:55:29,597 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:55:29,598 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:55:29,602 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 22:56:14,022 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:56:14,025 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:56:14,032 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:56:14,037 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:56:14,037 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:58:39,731 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 22:58:39,734 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 22:58:39,734 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 22:58:39,741 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 22:58:39,742 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:59:05,859 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 22:59:07,152 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:02:39,651 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:02:39,693 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:02:39,694 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:02:39,694 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:02:39,695 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:03:49,453 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:03:49,467 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:03:49,467 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:03:49,467 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:03:49,467 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:06:24,464 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:06:24,472 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:06:24,472 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:06:24,473 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:06:24,474 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:08:22,165 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:08:22,166 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:08:22,171 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:08:22,176 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:08:22,177 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:09:35,947 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:09:35,947 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:09:35,950 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:09:35,956 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:09:35,956 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:10:26,242 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:10:26,242 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:10:26,248 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:10:26,251 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:10:26,251 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:10:35,291 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:10:35,338 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:10:35,339 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:10:35,339 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:10:35,343 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:11:31,638 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:11:31,645 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:11:31,646 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:11:31,649 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:11:31,649 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:13:26,913 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:13:26,921 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:13:26,929 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:13:26,930 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:13:26,930 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:17:50,819 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:17:50,829 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:17:50,833 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:17:50,839 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:17:50,839 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:21:06,836 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:21:06,851 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:21:06,852 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:21:06,854 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:21:06,854 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:22:39,749 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:22:39,761 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:22:39,765 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:22:39,765 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:22:39,766 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:23:04,153 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:23:04,161 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:23:04,166 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:23:04,170 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:23:04,171 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:29:27,085 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:29:27,095 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:29:27,100 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:29:27,103 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:29:27,103 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:31:38,807 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:31:38,819 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:31:38,824 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:31:38,825 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:31:38,825 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:34:04,623 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:34:04,626 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:34:04,635 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:34:04,636 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:34:04,636 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:37:46,297 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:37:46,297 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:37:46,305 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:37:46,305 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:37:46,306 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:43:20,663 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:43:20,670 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:43:20,672 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:43:20,673 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
+INFO 2019-12-29 23:43:20,674 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:43:33,452 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:43:33,459 basehttp 154 "GET /banner/ HTTP/1.1" 200 476
+INFO 2019-12-29 23:43:33,460 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:43:33,461 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:43:33,677 basehttp 154 "GET /media/banner/m9.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 23:43:33,678 basehttp 154 "GET /media/banner/m6.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 23:43:33,678 basehttp 154 "GET /media/banner/m8.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 23:43:33,678 basehttp 154 "GET /media/banner/m7.jpeg HTTP/1.1" 304 0
+INFO 2019-12-29 23:43:35,625 basehttp 154 "GET /foods/cate/ HTTP/1.1" 200 79
+INFO 2019-12-29 23:43:35,632 basehttp 154 "GET /carts/foods/ HTTP/1.1" 200 102
+INFO 2019-12-29 23:43:35,634 basehttp 154 "GET /users/money/ HTTP/1.1" 200 16
+INFO 2019-12-29 23:43:35,636 basehttp 154 "GET /nav/ HTTP/1.1" 200 85
+INFO 2019-12-29 23:43:35,640 basehttp 154 "GET /foods/list/?ordering=-id&page=1 HTTP/1.1" 200 408
