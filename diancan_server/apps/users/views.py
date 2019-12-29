@@ -43,7 +43,7 @@ class UserMoneyAPIView(APIView):
             except Order.DoesNotExist:
                 log.error("订单号:%s不存在!" % order_number )
                 return Response({"message": "无效的订单号"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+            dt = datetime.now()
             with transaction.atomic():
                 save_id = transaction.savepoint()
                 order.order_status = 1
@@ -57,7 +57,7 @@ class UserMoneyAPIView(APIView):
                     # print('ddd', detail)
                     UserFood.objects.create(user=order.user,food=detail.food,
                                             buy_number=order_number,buy_type=0,
-                                            pay_time=datetime.now(),)
+                                            pay_time=dt.strftime('%Y-%m-%d %H:%M:%S %f'),)
 
                     course_list.append(detail.food.name)
 
