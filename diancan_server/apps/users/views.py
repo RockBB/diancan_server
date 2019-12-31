@@ -29,7 +29,7 @@ class UserMoneyAPIView(APIView):
             user_money = User.objects.get(id=user_id).money
             return Response({"money": user_money}, status=status.HTTP_200_OK)
         else:
-            return Response({"message": "无效的请求"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({"message": "Invalid request"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def post(self, request):
         """购物车更新商品信息"""
@@ -53,7 +53,7 @@ class UserMoneyAPIView(APIView):
                 # print('order', order)
             except Order.DoesNotExist:
                 log.error("订单号:%s不存在!" % order_number )
-                return Response({"message": "无效的订单号"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                return Response({"message": "Invalid order number"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
             dt = datetime.now()
             with transaction.atomic():
                 save_id = transaction.savepoint()
@@ -77,7 +77,7 @@ class UserMoneyAPIView(APIView):
         except:
             # log.error("修改订单和购买记录发生异常!")
             transaction.savepoint_rollback(save_id)
-            return Response({"message":"系统异常!"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({"message":"System exception!"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 
