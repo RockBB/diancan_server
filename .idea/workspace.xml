@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d77039-ade2-42a4-ad5c-a37ecf06d802" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diancan_server/apps/foods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/foods/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diancan_server/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diancan_server/settings/prop.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/settings/prop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/diancan.log" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/apps/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/utils/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/utils/exceptions.py" afterDir="false" />
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +56,12 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
+=======
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -66,6 +78,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -83,6 +96,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
   <component name="ProjectFrameBounds">
     <option name="x" value="5" />
     <option name="y" value="7" />
@@ -91,6 +106,7 @@
   </component>
   <component name="ProjectId" id="1VQ2vVRPILFEphEwMDFqsBThH8A" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -100,6 +116,8 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -192,6 +210,7 @@
       <workItem from="1577588409279" duration="2339000" />
       <workItem from="1577617188453" duration="4336000" />
       <workItem from="1577715543193" duration="5395000" />
+<<<<<<< HEAD
       <workItem from="1577849572693" duration="3242000" />
     </task>
     <servers />
@@ -226,6 +245,12 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32964426" />
     </layout>
   </component>
+=======
+      <workItem from="1577778601963" duration="885000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -235,12 +260,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -262,6 +281,7 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Envs/luffy/Lib/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -457,4 +477,6 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> 37246418646a5dd55ec30c0d661557778d1d41c6
 </project>

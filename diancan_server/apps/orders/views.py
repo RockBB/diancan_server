@@ -105,7 +105,7 @@ class OrderDetailAPIView(APIView):
         try:
             order = Order.objects.get(order_number=pk)
         except Order.DoesNotExist:
-            return Response({"message": "订单信息有误!"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"message": "Wrong order information!"}, status=status.HTTP_400_BAD_REQUEST)
 
         serializer = OrderDetailModelSerializer(instance=order)
 

@@ -56,7 +56,7 @@ class CartAPIView(APIView):
         try:
             Food.objects.get(pk=food_id, is_delete=False, is_show=True)
         except Food.DoesNotExist:
-            return Response({"message": "当前菜品不存在!"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"message": "The current dish does not exist!"}, status=status.HTTP_400_BAD_REQUEST)
 
         # 组装基本数据[课程ID,有效期]保存到redis
         redis = get_redis_connection("cart")
@@ -81,13 +81,13 @@ class CartAPIView(APIView):
 
 
         except:
-            return Response({"message": "添加菜品到购物车失败!请联系客服人员~"}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
+            return Response({"message": "Failed to add dishes to shopping cart! Please contact customer service~"}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
 
         # 返回结果,返回购物车中的商品数量
         count = redis.hlen("cart_%s" % user_id)
 
         return Response({
-            "message": "成功添加菜品到购物车!",
+            "message": "Successfully added dishes to cart!",
             "count": count,
         }, status=status.HTTP_200_OK)
 
@@ -102,7 +102,7 @@ class CartAPIView(APIView):
         try:
             Food.objects.get(pk=food_id, is_delete=False, is_show=True)
         except Food.DoesNotExist:
-            return Response({"message": "当前菜品不存在!"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"message": "The current dish does not exist!"}, status=status.HTTP_400_BAD_REQUEST)
 
         # 获取勾选状态
         is_select = request.data.get("is_select")
@@ -118,7 +118,7 @@ class CartAPIView(APIView):
             redis.srem("cart_selected_%s" % user_id, food_id)
 
         return Response({
-            "message": "修改购物车信息成功!"
+            "message": "Succeeded in modifying shopping cart information!"
         }, status=status.HTTP_200_OK)
 
     def patch(self, request):
@@ -135,7 +135,7 @@ class CartAPIView(APIView):
 
         return Response({
             "price": price,
-            "message": "修改购物车信息成功!"
+            "message": "Succeeded in modifying shopping cart information!"
         }, status=status.HTTP_200_OK)
 
     def delete(self, request):
@@ -160,4 +160,4 @@ class CartAPIView(APIView):
         pipeline.execute()
 
         # 返回操作结果
-        return Response({"message": "删除菜品课程成功!"}, status=status.HTTP_204_NO_CONTENT)
+        return Response({"message": "Delete dishes course successfully!"}, status=status.HTTP_204_NO_CONTENT)
