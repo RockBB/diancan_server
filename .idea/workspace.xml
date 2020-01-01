@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d77039-ade2-42a4-ad5c-a37ecf06d802" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/diancan_server/apps/foods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/foods/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/apps/home/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/home/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/apps/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/apps/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/apps/foods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/apps/foods/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diancan_server/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diancan_server/utils/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/utils/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/diancan.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/diancan.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diancan_server/settings/prop.py" beforeDir="false" afterPath="$PROJECT_DIR$/diancan_server/settings/prop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/diancan.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,65 +48,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diancan_server/apps/home/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-177">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diancan_server/apps/orders/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diancan_server/utils/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/diancan_server/apps/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/diancan_server/apps/foods/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,6 +60,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>我的</find>
+      <find>debug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,6 +78,8 @@
         <option value="$PROJECT_DIR$/diancan_server/apps/orders/models.py" />
         <option value="$PROJECT_DIR$/diancan_server/apps/users/models.py" />
         <option value="$PROJECT_DIR$/diancan_server/apps/foods/models.py" />
+        <option value="$PROJECT_DIR$/diancan_server/apps/foods/views.py" />
+        <option value="$PROJECT_DIR$/diancan_server/settings/prop.py" />
       </list>
     </option>
   </component>
@@ -155,34 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="diancan_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diancan_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diancan_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diancan_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-              <item name="diancan_server" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -278,17 +192,17 @@
       <workItem from="1577588409279" duration="2339000" />
       <workItem from="1577617188453" duration="4336000" />
       <workItem from="1577715543193" duration="5395000" />
+      <workItem from="1577849572693" duration="3242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15558000" />
+    <option name="totallyTimeSpent" value="18800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="7" width="1325" height="992" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29960474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21264823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -393,13 +307,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/diancan_server/apps/foods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diancan_server/apps/cart/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -417,13 +324,6 @@
             <element signature="e#0#35#0" expanded="true" />
             <element signature="e#440#1719#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diancan_server/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1209">
-          <caret line="185" column="1" lean-forward="true" selection-start-line="185" selection-start-column="1" selection-end-line="185" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -478,47 +378,78 @@
     <entry file="file://$PROJECT_DIR$/diancan_server/apps/orders/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/diancan_server/apps/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diancan_server/utils/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diancan_server/apps/orders/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/diancan_server/apps/orders/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="20">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/diancan_server/apps/home/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/diancan.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diancan_server/apps/foods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diancan_server/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/diancan_server/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="584">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/diancan_server/settings/prop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="301" selection-start-line="301" selection-end-line="301" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/diancan_server/apps/foods/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
