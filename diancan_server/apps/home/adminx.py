@@ -13,8 +13,8 @@ xadmin.site.register(views.BaseAdminView, BaseSetting)
 
 class GlobalSettings(object):
     """xadmin的全局配置"""
-    site_title = "点餐系统"  # 设置站点标题
-    site_footer = "宇宙有限公司"  # 设置站点的页脚
+    site_title = "Ordering system"  # 设置站点标题
+    site_footer = "Cosmos Limited"  # 设置站点的页脚
     menu_style = "accordion"  # 设置菜单折叠
 
 
