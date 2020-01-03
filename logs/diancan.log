@@ -36,3 +36,12 @@ INFO 2020-01-01 22:49:32,005 basehttp 154 "GET /foods/list/?ordering=-price&page
 INFO 2020-01-01 22:49:35,565 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
 INFO 2020-01-01 22:49:40,405 basehttp 154 "GET /foods/list/?ordering=-price&page=1 HTTP/1.1" 200 408
 INFO 2020-01-01 22:49:41,340 basehttp 154 "GET /foods/list/?ordering=price&page=1 HTTP/1.1" 200 408
+INFO 2020-01-03 22:40:19,721 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 17573
+INFO 2020-01-03 22:40:19,844 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 3185
+WARNING 2020-01-03 22:40:20,126 log 228 Not Found: /favicon.ico
+WARNING 2020-01-03 22:40:20,127 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3204
+INFO 2020-01-03 22:40:27,096 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 41193
+INFO 2020-01-03 22:40:27,167 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2020-01-03 22:40:31,000 basehttp 154 "GET /xadmin/users/user/add/ HTTP/1.1" 200 20672
+INFO 2020-01-03 22:40:31,044 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2020-01-03 22:41:05,978 basehttp 154 "GET /xadmin/users/user/ HTTP/1.1" 200 41193
