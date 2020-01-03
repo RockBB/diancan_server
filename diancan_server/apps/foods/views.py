@@ -19,7 +19,7 @@ class StandardPageNumberPagination(PageNumberPagination):
     """自定义分页器"""
     page_size_query_param = 'page_size'
     max_page_size = 12
-    page_size = 2
+    page_size = 12
 
 
 from .serializers import FoodModelSerializer
