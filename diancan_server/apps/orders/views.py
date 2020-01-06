@@ -34,7 +34,7 @@ class OrderAPIView(APIView):
 
             # 生成空的订单
             try:
-                order = Order.objects.create(order_title="食物购买", total_price=0, real_price=0,
+                order = Order.objects.create(order_title="Food purchase", total_price=0, real_price=0,
                                              order_number=order_number, user_id=user_id, )
 
                 # 到redis获取购物车信息
@@ -81,7 +81,9 @@ class OrderAPIView(APIView):
                     order.real_price = total_price
                     order.save()
                 else:
-                    return Response({"message": "生成订单失败,你没有选中购物车中的任何商品!"}, status=status.HTTP_406_NOT_ACCEPTABLE)
+                    return Response(
+                        {"message": "Failed to generate the order. You have not selected any items in the shopping cart!"},
+                        status=status.HTTP_406_NOT_ACCEPTABLE)
 
             except Exception:
                 # 记录错误日志
@@ -89,10 +91,10 @@ class OrderAPIView(APIView):
                 # 回滚事务
                 transaction.savepoint_rollback(save_id)
                 # 响应结果
-                return Response({"message": "系统异常!"}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
+                return Response({"message": "System exception!"}, status=status.HTTP_507_INSUFFICIENT_STORAGE)
 
         # 响应结果
-        return Response({"message": "成功生成订单!", "order": order.order_number})
+        return Response({"message": "Order generated successfully!", "order": order.order_number})
 
 
 from .serializers import OrderDetailModelSerializer
