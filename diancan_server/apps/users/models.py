@@ -5,8 +5,8 @@ from diancan_server.utils.models import BaseModel
 
 class User(AbstractUser):
     """用户模型类"""
-    mobile = models.CharField(max_length=11, unique=True, verbose_name='手机号')
-    money = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="账户金额", default=0)
+    mobile = models.CharField(max_length=11, unique=True, verbose_name='phone number')
+    money = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Account amount", default=0)
 
     class Meta:
         db_table = 'dc_users'
