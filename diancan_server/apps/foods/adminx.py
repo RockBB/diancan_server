@@ -4,7 +4,6 @@ from .models import FoodCategory
 
 
 class FoodCategoryModelAdmin(object):
-    """课程分类模型管理类"""
     pass
 
 
@@ -14,7 +13,6 @@ from .models import Food
 
 
 class FoodModelAdmin(object):
-    """课程模型管理类"""
     pass
 
 

@@ -7,7 +7,6 @@ from .serializers import FoodModelSerializer
 
 
 class FoodCategoryAPIView(ListAPIView):
-    """课程分类列表"""
     queryset = FoodCategory.objects.filter(is_delete=False, is_show=True).order_by("orders")
     serializer_class = FoodModelSerializer
 
@@ -16,7 +15,6 @@ from rest_framework.pagination import PageNumberPagination
 
 
 class StandardPageNumberPagination(PageNumberPagination):
-    """自定义分页器"""
     page_size_query_param = 'page_size'
     max_page_size = 12
     page_size = 12
@@ -28,7 +26,6 @@ from rest_framework.filters import OrderingFilter
 
 
 class FoodAPIView(ListAPIView):
-    """食物列表信息"""
     queryset = Food.objects.filter(is_delete=False, is_show=True).order_by("orders")
     serializer_class = FoodModelSerializer
     filter_backends = [DjangoFilterBackend, OrderingFilter]

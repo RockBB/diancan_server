@@ -8,8 +8,7 @@ class UserMoneySerializer(serializers.ModelSerializer):
         fields = ("id", "money")
 
 class UserModelSerializer(serializers.ModelSerializer):
-    # sms_code = serializers.CharField(max_length=6,min_length=6,required=True,help_text="短信验证码")
-    password2 = serializers.CharField(write_only=True, help_text="确认密码")
+    password2 = serializers.CharField(write_only=True, help_text="Confirm password")
     token = serializers.CharField(read_only=True, help_text="jwt token值")
 
     class Meta:
@@ -24,16 +23,14 @@ class UserModelSerializer(serializers.ModelSerializer):
         }
 
     def validate_mobile(self, mobile):
-        # 验证格式
         result = re.match('^1[3-9]\d{9}$', mobile)
         if not result:
-            raise serializers.ValidationError("手机号码格式有误!")
+            raise serializers.ValidationError("Wrong format of mobile number!")
 
-        # 验证唯一性
         try:
             user = User.objects.get(mobile=mobile)
             if user:
-                raise serializers.ValidationError("当前手机号码已经被注册!")
+                raise serializers.ValidationError("The current mobile number has been registered!")
 
         except User.DoesNotExist:
             pass
@@ -42,20 +39,17 @@ class UserModelSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
 
-        # 判断密码长度
         password = attrs.get("password")
         if not re.match('^.{6,16}$', password):
-            raise serializers.ValidationError("密码长度必须在6-16位之间!")
+            raise serializers.ValidationError("Password length must be between 6-16 bits!")
 
-        # 判断密码和确认密码是否一致
         password2 = attrs.get("password2")
         if password != password2:
-            raise serializers.ValidationError("密码和确认密码不一致!")
+            raise serializers.ValidationError("Password and confirm password are inconsistent!")
 
         return attrs
 
     def create(self, validated_data):
-        """保存用户"""
         mobile = validated_data.get("mobile")
         password = validated_data.get("password")
 
@@ -66,14 +60,12 @@ class UserModelSerializer(serializers.ModelSerializer):
                 password=password,
             )
 
-            # 密码加密
             user.set_password(user.password)
             user.save()
 
         except:
-            raise serializers.ValidationError("注册用户失败!")
+            raise serializers.ValidationError("Failed to register user!")
 
-        # 生成一个jwt
         from rest_framework_jwt.settings import api_settings
 
         jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
@@ -85,7 +77,6 @@ class UserModelSerializer(serializers.ModelSerializer):
         return user
 
 
-"""会员订单"""
 from orders.models import Order, OrderDetail
 
 
@@ -110,5 +101,4 @@ class UserOrderModelSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        # fields = ("username","身份信息..")
         fields = ("username", "user_orders")

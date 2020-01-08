@@ -3,8 +3,7 @@ from xadmin import views
 
 
 class BaseSetting(object):
-    """xadmin的基本配置"""
-    enable_themes = True  # 开启主题切换功能
+    enable_themes = True
     use_bootswatch = True
 
 
@@ -12,15 +11,13 @@ xadmin.site.register(views.BaseAdminView, BaseSetting)
 
 
 class GlobalSettings(object):
-    """xadmin的全局配置"""
-    site_title = "Ordering system"  # 设置站点标题
-    site_footer = "Cosmos Limited"  # 设置站点的页脚
-    menu_style = "accordion"  # 设置菜单折叠
+    site_title = "Ordering system"
+    site_footer = "Cosmos Limited"
+    menu_style = "accordion"
 
 
 xadmin.site.register(views.CommAdminView, GlobalSettings)
 
-# 轮播图
 from .models import BannerInfo
 
 
@@ -30,7 +27,6 @@ class BannerInfoModelAdmin(object):
 
 xadmin.site.register(BannerInfo, BannerInfoModelAdmin)
 
-# 导航
 from .models import NavInfo
 
 

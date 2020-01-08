@@ -27,7 +27,6 @@ SECRET_KEY = '%kdpwxhap&f72@^343xra$^x@w443_7bsbe)1ij*c*foq)te2)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# 设置哪些客户端可以通过地址访问到后端
 ALLOWED_HOSTS = [
     '*',
 ]
@@ -43,14 +42,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # 第三方组件
-    'corsheaders',  # 解决跨域
+    'corsheaders',
     'rest_framework',  # drf
     'xadmin',
-    'crispy_forms',  #
-    'reversion',  #
-    'ckeditor',  # 富文本编辑器
-    'ckeditor_uploader',  # 富文本编辑器上传图片模块
+    'crispy_forms',
+    'reversion',
+    'ckeditor',
+    'ckeditor_uploader',
 
     'home',
     'users',
@@ -108,19 +106,15 @@ DATABASES = {
 }
 
 
-# 设置redis缓存
 CACHES = {
-    # 默认缓存
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        # 项目上线时,需要调整这里的路径
         "LOCATION": "redis://127.0.0.1:6379/0",
 
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
-    # 提供给xadmin或者admin的session存储
     "session": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/1",
@@ -128,7 +122,6 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
-    # 提供存储短信验证码
     "sms_code": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
@@ -137,7 +130,6 @@ CACHES = {
         }
 
     },
-    # 存储购物车相关信息
     "cart": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/3",
@@ -148,7 +140,6 @@ CACHES = {
 
 }
 
-# 设置xadmin用户登录时,登录信息session保存到redis
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
@@ -201,16 +192,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 
-# 访问静态文件的url地址前缀
 STATIC_URL = '/static/'
-# 设置django的静态文件目录
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "statics")
 ]
 
-# 项目中存储上传文件的根目录[暂时配置]，注意，static目录需要手动创建否则上传文件时报错
 MEDIA_ROOT = os.path.join(BASE_DIR, "statics")
-# 访问上传文件的url地址前缀
 MEDIA_URL = "/media/"
 
 LOGGING = {
@@ -255,9 +242,7 @@ LOGGING = {
 
 
 REST_FRAMEWORK = {
-    # 异常处理
     'EXCEPTION_HANDLER': 'diancan_server.utils.exceptions.custom_exception_handler',
-    # 配置用户认证方式
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
@@ -266,36 +251,31 @@ REST_FRAMEWORK = {
 }
 
 
-# CORS组的配置信息
 CORS_ORIGIN_WHITELIST = (
     '*',
     '127.0.0.1:8080',
     '127.0.0.1:9000',
 )
-CORS_ALLOW_CREDENTIALS = True  # 允许ajax跨域请求时携带cookie
+CORS_ALLOW_CREDENTIALS = True
 
 import datetime
 
 JWT_AUTH = {
-    # 配置jwt的有效期5
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=5),
-    # 设置jwt登录视图的返回值
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
-# # 配置django的认证类功能,增加手机号登录
 AUTHENTICATION_BACKENDS = [
     'users.utils.UsernameMobileAuthBackend',
 ]
 
 
-# 富文本编辑器ckeditor配置
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'full',  # 工具条功能
-        'height': 300,  # 编辑器高度
-        # 'width': 300,     # 编辑器宽
+        'toolbar': 'full',
+        'height': 300,
+        # 'width': 300,
     },
 }
-CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，留空则调用django的文件上传功能
+CKEDITOR_UPLOAD_PATH = ''
 

@@ -21,9 +21,6 @@ class UserMoneyAPIView(APIView):
     queryset = User.objects.all()
 
     def get(self, request):
-        """获取购物车商品课程列表"""
-        # 获取当前用户ID
-        # user_id = 1
         user_id = request.user.id
         if user_id:
             user_money = User.objects.get(id=user_id).money
@@ -32,18 +29,13 @@ class UserMoneyAPIView(APIView):
             return Response({"message": "Invalid request"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def post(self, request):
-        """购物车更新商品信息"""
-        # 获取当前登录用户ID
         user_id = request.user.id
-        # print(user_id)
-        # 获取客户端发送过来的课程ID
         money = request.data.get("money")
         order_number = request.data.get("order_number")
         # print(money)
         try:
 
             user_money = User.objects.get(id=user_id).money
-            # print('user_money', user_money, type(user_money))
             money = Decimal(user_money) - Decimal(money)
             ret = User.objects.filter(id=user_id).update(money=money, is_active=True)
             # print('', ret, type(ret))
@@ -52,7 +44,7 @@ class UserMoneyAPIView(APIView):
                 order = Order.objects.get(order_number=order_number)
                 # print('order', order)
             except Order.DoesNotExist:
-                log.error("订单号:%s不存在!" % order_number )
+                log.error("Order num:%s non-existent!" % order_number )
                 return Response({"message": "Invalid order number"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
             dt = datetime.now()
             with transaction.atomic():
@@ -61,7 +53,6 @@ class UserMoneyAPIView(APIView):
                 order.pay_time = datetime.now()
                 order.save()
 
-                # 课程与用户之间添加一条购买记录
                 detail_list = order.order_foods.all()
                 course_list = []
                 for detail in detail_list:
@@ -75,7 +66,6 @@ class UserMoneyAPIView(APIView):
             return Response({'money': money, 'success': 'pay success'}, status=status.HTTP_200_OK)
 
         except:
-            # log.error("修改订单和购买记录发生异常!")
             transaction.savepoint_rollback(save_id)
             return Response({"message":"System exception!"},status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 

@@ -4,7 +4,6 @@ import xadmin
 #
 #
 # class UserModelAdmin(object):
-#     """订单模型管理类"""
 #     pass
 #
 #
@@ -14,7 +13,6 @@ from .models import UserFood
 
 
 class UserFoodModelAdmin(object):
-    """订单详情模型管理类"""
     pass
 
 
